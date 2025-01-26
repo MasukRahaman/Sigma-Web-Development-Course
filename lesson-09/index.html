@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element selector */
+        div {
+            background-color: red;
+        }
+
+        /* class selector */
+        .red {
+            background-color: brown;
+        }
+
+        /* ID selector */
+        #green {
+            background-color: aquamarine;
+        }
+
+        /* child selector */
+        div>p {
+            color: rgb(14, 75, 230);
+            background-color: aqua;
+        }
+
+        /* Descendant selector */
+        div p {
+            background-color: brown;
+            color: rgb(22, 206, 22);
+        }
+
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited {
+            color: rgb(9, 9, 9);
+        }
+
+        a:link {
+            color: blueviolet;
+        }
+
+        a:active {
+            background-color: red;
+        }
+
+        a:hover {
+            background-color: darkseagreen;
+        }
+        p:first-child{
+            background-color: black;
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+    <div>
+        Hi, I'm a div
+    </div>
+    <div class="red">
+        Hi, I'm another div
+    </div>
+    <div id="green">
+        Hi, I'm another div
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi recusandae accusantium sint quia atque iusto.
+            Nulla, sunt voluptas. Aut, aliquid.</p>
+    </div>
+    <div>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi recusandae accusantium sint quia atque
+                iusto. Nulla, sunt voluptas. Aut, aliquid.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi recusandae accusantium sint quia atque
+                iusto. Nulla, sunt voluptas. Aut, aliquid.</p>
+        </article>
+    </div>
+    <a href="http://www.google.com">Open Google</a>
+    <a href="http://www.facebook.com">Open Facebook</a>
+</body>
+
+</html>
