@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <style>
+        body {
+            background: red;
+        }
+
+        @media only screen and (max-width:955px) {
+            body {
+                background: blue;
+            }
+            boxx{
+                flex-direction: row;
+            }
+        }
+
+        .boxx {
+            display: flex;
+        }
+
+        .boxes {
+            border: 2px solid white;
+            height: 122px;
+            width: 122px;
+            background: grey;
+            margin: 12px;
+            padding: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Hey I am a freaking red body.
+        </div">
+        <div class="boxx">
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+        </div>
+</body>
+
+</html>
