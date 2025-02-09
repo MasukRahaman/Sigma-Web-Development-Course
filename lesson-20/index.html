@@ -3,41 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multicolor Web</title>
+    <title>Multi Color Navbar</title>
     <style>
         *{
-
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        div{
-            margin: 0px;
-            padding: 0px;
+        body{
+            background-color: rgb(165, 156, 156);
+            }
+        .navbar{
+            height: 40px;
             width: 100vw;
-            height: 50px;
+            background: palevioletred;
         }
-        .main{
-            margin-top: 30px;
-            background-color: aqua;
+        nav ul{
+            display: flex;
+            justify-content: center;
         }
-        .main ul li{
-            list-style:none;
-            display: inline;
-            border: 2px solid black;
-            padding: 15px;
-            margin-left: 20px;
-        }        
+        nav ul li{
+            padding: 10px;
+            display: inline-block;
+            list-style: none;
+            margin-left: 40px;
+        }
+        nav ul li:hover{
+            background: aquamarine;
+        }
+        nav ul li::after{
+            background: rebeccapurple;
+        }
     </style>
 </head>
 <body>
-    <div class="main">
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Product</li>
-                <li>Service</li>
-                <li>About Us</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-    </div>
+    <nav class="navbar">
+        <ul>
+            <li class="listitem1">Home</li>
+            <li class="listitem1">Product</li>
+            <li class="listitem1">About Us</li>
+            <li class="listitem1">Contact</li>
+        </ul>
+    </nav>
 </body>
 </html>
