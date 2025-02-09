@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box::first-line{
+            color: brown;
+         } */
+        .boxes * {
+            color: rgb(207, 59, 244);
+            border: 2px solid black;
+        }
+        p, .box, [data-x="first"]{
+            padding: 20px;
+        }
+        .box:nth-child(odd){
+            background-color: aqua;
+        }
+        .boxes::before{
+            content:" Still learning";
+            color: orangered;
+            border: 2px solid black;
+            display: block;
+            padding: 35px;
+        }
+        .boxes::after{
+            content: "Sigma web dev course OP";
+            color: rgb(255, 0, 0);
+            border: 2px solid black;
+            display: block;
+            padding: 10px;
+        }
+        ::selection{
+            background-color: rgb(22, 143, 223);
+        }
+        .boxes::first-letter{
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-x="first" class="box">I am first box</div>
+        <div class="box">I am second box</div>
+        <div class="box">I am third box</div>
+    </div>
+</body>
+
+</html>
