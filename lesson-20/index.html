@@ -1,49 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multi Color Navbar</title>
     <style>
-        *{
+        /* :root {
+            --primary-color: #d87093;
+            --text-color: white;
+            --secendary-color: rgb(244, 205, 222);
+            --hover-color: rgb(91, 117, 109);
+        } */
+        :root {
+            --primary-color: #4d913c;
+            --text-color: white;
+            --secendary-color: rgb(155, 200, 149);
+            --hover-color: rgb(107, 88, 251);
+        }
+
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        body{
-            background-color: rgb(165, 156, 156);
-            }
-        .navbar{
+
+        body {
+            background-color: var(--secendary-color);
+        }
+
+        nav {
+            color: var(--text-color);
+            padding: 11px 0;
+        }
+
+        a {
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        .navbar {
             height: 40px;
             width: 100vw;
-            background: palevioletred;
+            background: var(--primary-color);
         }
-        nav ul{
+
+        nav ul {
             display: flex;
             justify-content: center;
         }
-        nav ul li{
+
+        nav ul li {
             padding: 10px;
-            display: inline-block;
+            display: inline;
             list-style: none;
             margin-left: 40px;
         }
-        nav ul li:hover{
-            background: aquamarine;
+
+        nav ul li:hover {
+            background: var(--hover-color);
         }
-        nav ul li::after{
+
+        nav ul li::after {
             background: rebeccapurple;
         }
     </style>
 </head>
+
 <body>
-    <nav class="navbar">
-        <ul>
-            <li class="listitem1">Home</li>
-            <li class="listitem1">Product</li>
-            <li class="listitem1">About Us</li>
-            <li class="listitem1">Contact</li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <a href="/">
+                    <li class="listitem1">Home</li>
+                </a>
+                <a href="/">
+                    <li class="listitem1">Product</li>
+                </a>
+                <a href="/">
+                    <li class="listitem1">About Us</li>
+                </a>
+                <a href="/">
+                    <li class="listitem1">Contact</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
 </body>
+
 </html>
