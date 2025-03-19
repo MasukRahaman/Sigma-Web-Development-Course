@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.logo {
+    height: 56px;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+}
+
+.list li {
+    padding: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.list li a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    width: 62vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 70px;
+    font-family: 'Segoe UI';
+    font-weight: 200;
+}
+
+.first span {
+    font-size: 48px;
+}
+
+section span img {
+    margin: 0 10px;
+}
+
+.first p {
+    font-size: 24px;
+    width: 60vw;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+button {
+    background: #00b6d1;
+    padding: 14px 16px;
+    border-radius: 6px;
+    border-style: none;
+    color: white;
+    font-weight: 900;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.second {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 73px;
+    gap: 15px;
+}
+
+.second .flex {
+    font-size: 20px;
+}
+
+.second img {
+    height: 65px;
+}
+
+.green{
+    background-color: #5cb85c;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-top: 50px;
+}
+
+.hash{
+    word-break: break-word;
+    font-size: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    line-height: 1rem;
+}
+
+.lenguage{
+    text-align: center;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.lenguage a {
+    text-decoration: none;
+    color: white;
+}
+
+.third{
+    background: rgb(27, 26, 26);
+    width: 100vw;
+    height: 800px;
+    margin-top: 60px;
+}
+
+.forth{
+    background: rgb(255, 255, 255);
+    width: 100vw;
+    height: 800px;
+    margin-top: 60px;
+}
