@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.main1 {
+    background-image: url(assets/bg.jpg);
+    height: 97vh;
+    width: 100vw;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.main1 .box {
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    opacity: 0.8;
+    background-color: rgb(18, 15, 15);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+    height: 93px;
+}
+
+nav img {
+    color: rgb(255, 0, 0);
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+    background-color: red;
+    padding: 6px 16px;
+    color: white;
+    border-radius: 4px;
+    border-style: none;
+    font-size: 16px;
+}
+
+.main1 .hero {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    position: relative;
+    z-index: 10;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calx(100%, -62px);
+    text-align: center;
+    padding: 0 30px;
+}
+
+.main1 .hero span:nth-child(1) {
+    font-size: 52px;
+    font-weight: 900;
+    line-height: 70px;
+    text-align: center;
+}
+
+.main1 .hero span:nth-child(2) {
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 70px;
+    text-align: center;
+}
+
+.main1 .hero span:nth-child(3) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 65px;
+    text-align: center;
+}
+
+.main1 .hero span:nth-child(4) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.main1 .hero div:nth-child(5) {
+    position: relative;
+    top: 10px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+}
+
+.main1 .hero input {
+    width: 380px;
+}
+
+.main1 .hero button {
+    padding: 15px 24px;
+    color: white;
+    background-color: red;
+    border-style: none;
+    border-radius: 3.5px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.main1 .hero input {
+    opacity: 0.7;
+    background-color: rgb(8, 4, 4);
+    border: 1px solid white;
+    border-radius: 3.5px;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.main1 nav button:hover {
+    cursor: pointer;
+    background-color: rgb(225, 10, 10)
+}
+
+.main1 .hero div:nth-child(5) button:hover {
+    background-color: rgb(225, 10, 10);
+    cursor: pointer;
+}
+
+.separator{
+    height: 4px;
+    width: 100%;
+    background-color: red;
+    clip-path: ellipse(48% 100% at 50% 100%);
+}
+
+/* .netflix-separator {
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    /* This matches Netflix's bottom section 
+    line-height: 0;
+}
+
+.netflix-separator svg {
+    display: block;
+    width: 100%;
+    height: auto;
+} */
+
+.trendings{
+    display: flex;
+    width: 80vh;
+    margin: auto 10%;
+    height: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.trendings h2{
+    color: white;
+    align-content: center;
+}
+.moviecards{
+    display: flex;
+    margin: auto;
+    height: 500px;
+    width: 76.5vw;
+    gap: 50px;
+    background-color: rgb(0, 0, 0);
+}
+.moviecards .moviecard1{
+    height: 250px;
+    width: 180px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+.moviecards .moviecard2{
+    height: 250px;
+    width: 180px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+.moviecards .moviecard3{
+    height: 250px;
+    width: 180px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+.moviecards .moviecard4{
+    height: 250px;
+    width: 180px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+.moviecards .moviecard5{
+    height: 250px;
+    width: 180px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
