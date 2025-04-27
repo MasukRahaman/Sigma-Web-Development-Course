@@ -1,0 +1,3 @@
+- basic intro of JavaScript
+- Variables, Data types & Objects
+- Var VS Let
